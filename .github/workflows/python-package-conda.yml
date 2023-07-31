@@ -21,6 +21,9 @@ jobs:
         environment-file: environment.yml
         python-version: 3.9
         auto-activate-base: true
+    - name: Install deepface
+      run: |
+        pip install deepface
     - name: Run emotion detection script
       run: |
         python emotions_Deepface.py
